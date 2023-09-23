@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>Js Class</h1>
+    <form>
+        <input type="text" id="main" onblur="blured()">
+        <input type="text" onfocus="colorchange()" id="inpEl2">
+    </form>
+   
+    <script>
+        // let a = document.createElement("h1");
+        // a.innerText = "Welcome to DOM"
+        // document.body.appendChild(a)
+        // a.style.color = "orange"
+        // a.style.fontStyle = "italic"
+        // a.style.display="flex"
+        // a.style.justifyContent="center"
+
+        // let section = document.createElement("div")
+        // section.setAttribute('class', 'container')
+        // section.style.height = "600px"
+        // section.style.backgroundColor = "blue"
+        // section.style.padding="20px"
+        
+        // let para = document.createElement("p")
+        // para.innerHTML = "India is My country.now india change as Bharath"
+        // para.style.color = "white"
+        // para.style.fontSize = "20px"
+        // para.style.padding = "20px"
+        // para.style.display="flex"
+        // para.style.justifyContent="center"
+        // para.removeAttribute("style")
+        
+        // let image= document.createElement("img")
+        // image.setAttribute("src","https://as1.ftcdn.net/v2/jpg/01/85/66/14/1000_F_185661497_zPjAueyhzl2ErxdE37VKDFNOuZN6ukyj.jpg")
+        // image.src='https://as1.ftcdn.net/v2/jpg/01/85/66/14/1000_F_185661497_zPjAueyhzl2ErxdE37VKDFNOuZN6ukyj.jpg'
+        // image.style.height="500px"
+        // image.style.width="500px"
+        // image.style.position="relative"
+        // image.style.left="50%"
+        // image.style.borderRadius="50%" 
+        // image.style.animation="round 2s infinite"   
+        // image.style.transform={
+        //     from{
+        //         transform:"rotatey(360deg)"
+        //     }
+        //     to{
+        //         transform:"rotatey(0deg)"
+        //     }
+        // }
+        // image.style.transform="rotateX(0deg)"
+        // image.style.hover="transform=rotate(180deg)"
+        // section.prepend(image)
+        // section.appendChild(para)
+        // document.body.appendChild(section)
+        // console.log(image.getAttribute("src"))
+        
+    //    document.getElementById("q").addEventListener("keydown",()=>{
+    //     alert("keydown occurs")
+    //    })
+    //    document.getElementById("q").addEventListener("keyup",()=>{
+    //     console.log("key")
+    //    })
+    //    document.getElementById("q").addEventListener("keypress",()=>{
+    //     console.log("key")
+    //    })
+        
+        // document.getElementById("q").addEventListener("keydown",(event)=>{
+        //     if(event.keyCode==13){
+        //         alert("password id correct")
+        //     }
+        //     else{
+        //         alert("password incorrect")
+        //     }
+        // })
+
+        // document.getElementById("q").addEventListener("mouseover",()=>{
+        //     alert("occurs mousedown")
+        // })
+    
+    //    function colorchange(){
+    //     inpEl2.style.backgroundColor="red"
+    //     inpEl2.style.color="white"
+    //    }
+    //    function blured(){
+    //     alert("input correct")
+    //    }
+    
+    let array=[1,"a",2,"b",3]
+    array[4]="c"
+    console.log(array)
+    array.push(8)
+    console.log(array)
+    array.pop()
+    console.log(array)
+    console.log(array.slice(1,3,4))
+
+    let name=["x","d","j","a"]
+    name.sort()
+    console.log(name)
+    name.shift()
+    console.log(name)
+    name.unshift(5)
+    console.log(name)
+
+    // console.log(name.join("*"))
+
+    // console.log(array.concat(name))
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

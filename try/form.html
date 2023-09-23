@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+    <style>
+        .one {
+            text-align: end;
+        }
+        .main{
+            margin-left: 500px;
+        }
+        .two{
+             margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Register Your Account</h1>
+    <div class="main">
+        <table>
+            <tr>
+                <td class="one">
+                    Enter Name :<br><br>
+
+                    Enter Email Id :<br><br>
+
+                    Enter username :<br><br>
+
+                    Enter Password : <br><br>
+
+                    Enter Confirm Password :<br><br>
+                </td>
+                <td>
+                    <input id="name" type="text"><br><br>
+
+                    <input id="email" type="text"><br><br>
+
+                    <input id="nickname" type="text"><br><br>
+
+                    <input id="pass" type="password"><br><br>
+
+                    <input id="repass" type="password"><br><br>
+                </td>
+            </tr>
+        </table>
+        <input type="button" value="Create Account" class="two" onclick="valid()">
+        <input type="button" value="Reset" onclick="valid1()">
+    </div>
+   
+    <div>
+        <h1>Account Details</h1>
+        <div id="one"></div><br>
+        <div id="two"></div><br>
+        <div id="three"></div><br>
+        <div id="four"></div><br>
+        <div id="five"></div><br>
+    </div>
+    <script>
+        function valid()
+        {
+            var a = document.querySelector("#name").value;
+            var b = document.querySelector("#email").value;
+            var c = document.querySelector("#nickname").value;
+            var d = document.querySelector("#pass").value;
+            var e = document.querySelector("#repass").value;
+            document.getElementById("one").innerHTML=("Enter Name : "+ a )
+            document.getElementById("two").innerHTML=("Enter Email Id : "+ b )
+            document.getElementById("three").innerHTML=("Enter username : "+ c )
+            document.getElementById("four").innerHTML=(" Your Account Created Successfully. ")
+            
+        }
+        function valid1(){
+            var a = document.querySelector("#name").value="";
+            var b = document.querySelector("#email").value="";
+            var c = document.querySelector("#nickname").value="";
+            var d = document.querySelector("#pass").value="";
+            var e = document.querySelector("#repass").value="";
+        }
+
+
+    </script>
+
+</body>
+
+</html>

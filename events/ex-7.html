@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="getvalue" onkeyup="myfunction()">
+    <select id="integer"></select>
+    <script>
+        function myfunction(){
+           var a = parseInt(document.getElementById("getvalue").value);
+           if(a>0 || a<0){
+            for(i=a;i<=a;++i){   
+            var b=(document.getElementById("integer").innerHTML+="<option>" + i + "</option>");
+            }
+        }        
+        }
+    </script>
+</body>
+</html>

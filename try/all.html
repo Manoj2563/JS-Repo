@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=document.createTextNode("Enter A Value : ")
+        var b=document.createElement("input")
+        b.setAttribute("type","number")
+        b.setAttribute("id","num1")
+        var z=document.createElement("br")
+        var y=document.createElement("br")
+        var d=document.createTextNode("Enter B Value : ")
+        var e=document.createElement("input")
+        e.setAttribute("type","number")
+        e.setAttribute("id","num2")
+        var x=document.createElement("br")
+        var w=document.createElement("br")
+        var c=document.createElement("input")
+        c.setAttribute("type","button")
+        c.setAttribute("value","Click")
+        c.setAttribute("onclick","add()")
+        var u=document.createElement("br")
+        var v=document.createElement("br")
+        var f=document.createTextNode("Mathemactical Opertaions")
+        var g=document.createTextNode("Addition value : ") 
+        var i=document.createElement("br")
+        var h=document.createElement("div")
+        h.setAttribute("id","one")    
+        var o=document.createElement("div")
+        o.setAttribute("id","two") 
+        var p=document.createElement("div")
+        p.setAttribute("id","three")    
+        var q=document.createElement("div")
+        q.setAttribute("id","four")  
+        var r=document.createElement("div")
+        r.setAttribute("id","five")  
+        function add(){
+            var m=parseInt(document.getElementById("num1").value)
+            var n=parseInt(document.getElementById("num2").value)
+            document.getElementById("one").innerHTML =(m+n)
+            document.getElementById("two").innerHTML = m-n
+            document.getElementById("three").innerHTML = m*n
+            document.getElementById("four").innerHTML = m/n
+            document.getElementById("five").innerHTML = m%n
+        }
+
+
+
+
+        document.body.appendChild(a)
+        document.body.appendChild(b)
+        document.body.appendChild(z)
+        document.body.appendChild(y)
+        document.body.appendChild(d)
+        document.body.appendChild(e)
+        document.body.appendChild(x)
+        document.body.appendChild(w)
+        document.body.appendChild(c)
+        document.body.appendChild(u)
+        document.body.appendChild(v)
+        document.body.appendChild(f)
+        document.body.appendChild(g)
+        document.body.appendChild(i)
+        document.body.appendChild(h)
+        document.body.appendChild(o)
+        document.body.appendChild(p)
+        document.body.appendChild(q)
+        document.body.appendChild(r)
+        
+    </script>
+</body>
+</html> 

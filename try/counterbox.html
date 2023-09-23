@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter Box</title>
+</head>
+
+<body>
+    <!-- <table>
+        <tr>
+            <td><input type="button" value="-" onclick="decrement()" id="sub"></td>
+            <td><input type="text" onclick="veiw()" id="main"></td>
+            <td><input type="button" value="+" onclick="increment()" id="add"></td>
+        </tr>
+    </table>
+    <script>
+
+        function increment() {
+
+            document.getElementById('add').stepUp();
+        }
+
+        function decrement() {
+
+            document.getElementById('sub').stepDown();
+        }
+
+
+    </script> -->
+
+    <button onclick="sub()">-</button>
+    <input id=demoInput type=number>
+    <button onclick="add()">+</button>
+    <script>
+        // function sub() {
+        //     document.getElementById('demoInput').stepDown();
+        // }
+        // function add() {
+        //     document.getElementById('demoInput').stepUp();
+        // }
+        var count = 0;
+        function add() {
+            document.getElementById('demoInput').value = count++;
+        }    
+        function sub() {
+            document.getElementById('demoInput').value = count--  ;
+        }    
+        </script>
+</body>
+
+</html>

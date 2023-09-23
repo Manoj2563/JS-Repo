@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+</head>
+
+<body>
+    <!-- User name : <input id="name" type="text"><br><br>
+    Father name : <input id="father" type="text"><br><br>
+    Date of Birth : <input id="dob" type="date"><br><br>
+    Email Id : <input id="mail" type="text"> <br><br>
+    Phone number : <input id="num" type="number"> <br><br>
+    Qualification : <input id="stdy" type="text"><br><br>
+    Soft Skills : <input id="skills" type="text"><br><br>
+    Technical Skills : <input id="core" type="text"> <br><br>
+    <input type="button" value="Register" onclick="valid()">
+    <hr>
+    <div>
+        <h1>Resume</h1>
+        <div id="one"></div><br>
+        <div id="two"></div><br>
+        <div id="three"></div><br>
+        <div id="four"></div><br>
+        <div id="five"></div><br>
+        <div id="six"></div><br>
+        <div id="seven"></div><br>
+        <div id="eight"></div><br>
+        
+    </div>
+    <script>
+        function valid() {
+            var a = document.querySelector("#name").value;
+            var b = document.querySelector("#father").value;
+            var c = document.querySelector("#dob").value;
+            var d = document.querySelector("#mail").value;
+            var e = document.querySelector("#num").value;
+            var f = document.querySelector("#stdy").value;
+            var g = document.querySelector("#skills").value;
+            var h = document.querySelector("#core").value;
+            document.getElementById("one").innerHTML=("First Name : "+ a )
+            document.getElementById("two").innerHTML=("Father Name : "+ b )
+            document.getElementById("three").innerHTML=("Date of Birth : "+ c )
+            document.getElementById("four").innerHTML=("Email ID : "+ d )
+            document.getElementById("five").innerHTML=("Mobile number : "+ e )
+            document.getElementById("six").innerHTML=("Qualification : "+ f )
+            document.getElementById("seven").innerHTML=("Soft Skills : "+ g )
+            document.getElementById("eight").innerHTML=("Technical Skils : "+ h )
+            document.querySelector("#name").value="";
+            document.querySelector("#father").value="";
+            var c = document.querySelector("#dob").value="";
+            var d = document.querySelector("#mail").value="";
+            var e = document.querySelector("#num").value="";
+            var f = document.querySelector("#stdy").value="";
+            var g = document.querySelector("#skills").value="";
+            var h = document.querySelector("#core").value="";
+
+            
+
+        }
+    </script> -->
+    <div id="all" style="height:500px ;">
+        <img id="main" alt="">
+    </div>
+
+    <button onclick="valid()">start</button>
+    <button onclick="valid1()">next</button>
+    <button onclick="valid2()">Close</button>
+    <script>
+        function valid() {
+            var a = document.getElementById("main")
+            a.src = "https://p1.hiclipart.com/preview/65/307/737/thor-from-marvel-s-the-avengers-aou-render-marvel-avengers-thor-digital-wallpaper-png-clipart.jpg"
+            a.style.height = "50%"
+        }
+        function valid1() {
+            var a = document.getElementById("main")
+            a.src = "https://media.wallpaperchill.com/1440x2560-wallpapers/1440x2560-background-hd-wallpaper-s525.jpg"
+            a.style.height = "50%"
+        }
+        function valid2() {
+            var a = document.getElementById("main")
+            // a.src = "https://media.wallpaperchill.com/1440x2560-wallpapers/1440x2560-background-hd-wallpaper-s525.jpg"
+            a.style.display = ""
+        }
+    </script>
+</body>
+
+</html>
